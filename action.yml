@@ -48,7 +48,7 @@ runs:
       id: install-poetry
       shell: bash
       run: |-
-        pipx install poetry==\ --python "${{ steps.setup-python.outputs.python-path }}"
+        pipx install poetry --python "${{ steps.setup-python.outputs.python-path }}"
 
     - name: Read poetry cache location
       id: poetry-cache-location
